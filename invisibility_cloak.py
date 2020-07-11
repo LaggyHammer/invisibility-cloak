@@ -103,8 +103,9 @@ def main(file_name='output.avi', fps=20.0, size=(640, 480), color=None, upper=No
         final_output = cv2.addWeighted(res1, 1, res2, 1, 0)
         out.write(final_output)
         cv2.imshow("Invisibility Cloak", final_output)
-        cv2.waitKey(1)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+        key = cv2.waitKey(1) & 0xFF
+
+        if key == ord('q'):
             break
 
     cap.release()
