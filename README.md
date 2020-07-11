@@ -3,6 +3,8 @@
 Using opencv masks, the module renders objects of a given color invisible to the camera.
 The range finder module provided within can help identify the color range of any object.
 
+Run the invisibility_cloak script and let it see the background for a few seconds. Come in with the object/cloak into the frame to render it invisible.
+
 ## Usage
 ```commandline
 python invisibility_cloak.py --filter red
