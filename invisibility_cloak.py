@@ -1,7 +1,21 @@
-# USAGE: You need to specify a filter or the upper & lower bounds for a filter in the HSV colorspace (comma separated)
-# python invisibility_cloak.py --filter red
-# or
-# python range_finder.py --filter custom --lower 10,150,0 --upper 140,255,255
+# coding: utf-8
+# =====================================================================
+#  Filename:    image_orientation.py
+#
+#  py Ver:      python 3.6 or later
+#
+#  Description: Using opencv masks, the module renders objects of a given color invisible to the camera.
+#  Run the invisibility_cloak script and let it see the background for a few seconds.
+#  Come in with the object/cloak into the frame to render it invisible.
+#
+#  Usage: You need to specify a filter or the upper & lower bounds for a filter in the HSV colorspace (comma separated)
+#  python invisibility_cloak.py --filter red
+#  or
+#  python invisibility_cloak.py --filter custom --lower 10,150,0 --upper 140,255,255
+#
+#  Author: Ankit Saxena (ankch24@gmail.com)
+# =====================================================================
+
 
 import cv2
 import numpy as np
